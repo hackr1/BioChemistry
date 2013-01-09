@@ -10,6 +10,7 @@ public class ItemSalt extends Item {
 		setMaxStackSize(64);
 		setIconIndex(0);
 		setItemName("Salt");
+		this.setCreativeTab(CreativeTabs.tabMaterials);
 	}
 	
 	public String getTextureFile()

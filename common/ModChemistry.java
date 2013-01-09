@@ -2,6 +2,7 @@ package Chemistry.common;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.*;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -49,6 +50,9 @@ public class ModChemistry
 		LanguageRegistry.addName(platinumOre, "Platinum Ore");
 		LanguageRegistry.addName(salt, "Salt (NaCl)");
 		LanguageRegistry.addName(platinum, "Platinum Ingot (Pt)");
+		
+		//adding smelting recipes
+		GameRegistry.addSmelting(platinumOre.blockID, new ItemStack(platinum), 1.0f);
 	}
 	
 
