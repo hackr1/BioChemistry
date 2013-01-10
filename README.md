@@ -7,7 +7,7 @@ Latest Recommended Build: (there aren't any recommended builds yet)
 
 Latest Pre-Release Build: (there aren't any pre-release builds yet)
 
-Latest internal dev build: 1.0 #001
+Latest internal dev build: 1.0 #002
 
 IMPORTANT INFORMATION:
 ======================
