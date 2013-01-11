@@ -1,4 +1,4 @@
-package Chemistry.common;
+package biochemistry.common;
 
 import java.util.Random;
 import net.minecraft.block.Block;
@@ -17,11 +17,11 @@ public class BlockSaltOre extends Block {
 	
 	public String getTextureFile()
     {
-            return CommonProxyChemistry.ORES_PNG;
+            return CommonProxyBiochemistry.ORES_PNG;
     }
 	
 	public int idDropped(int par1, Random random, int zero) {
-        return ModChemistry.salt.shiftedIndex;
+        return ModBiochemistry.salt.shiftedIndex;
 }
 
 }

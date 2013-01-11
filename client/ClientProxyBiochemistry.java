@@ -1,9 +1,9 @@
-package Chemistry.client;
+package biochemistry.client;
 
+import biochemistry.common.*;
 import net.minecraftforge.client.MinecraftForgeClient;
-import Chemistry.common.*;
 
-public class ClientProxyChemistry extends CommonProxyChemistry {
+public class ClientProxyBiochemistry extends CommonProxyBiochemistry {
 	 @Override
 	    public void registerRenderThings()
 	    {

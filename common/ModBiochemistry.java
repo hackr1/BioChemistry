@@ -1,4 +1,4 @@
-package Chemistry.common;
+package biochemistry.common;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -14,13 +14,13 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.*;
 
-@Mod(modid = "chemistry", name = "Chemistry", version = "1.0 Hydrogen")
+@Mod(modid = "biochemistry", name = "BioChemistry", version = "1.0 Hydrogen")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
-public class ModChemistry 
+public class ModBiochemistry 
 {
 	// proxy things
-	@SidedProxy(clientSide = "Chemistry.client.ClientProxyChemistry", serverSide = "Chemistry.common.CommonProxyChemistry")
-	public static CommonProxyChemistry proxy;
+	@SidedProxy(clientSide = "biochemistry.client.ClientProxyBiochemistry", serverSide = "biochemistry.common.CommonProxyBiochemistry")
+	public static CommonProxyBiochemistry proxy;
 	
 	//block definitions
 	public static Block saltOre;

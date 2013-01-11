@@ -1,4 +1,4 @@
-package Chemistry.common;
+package biochemistry.common;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -15,7 +15,7 @@ public class ItemSalt extends Item {
 	
 	public String getTextureFile()
     {
-            return CommonProxyChemistry.ITEMS_PNG;
+            return CommonProxyBiochemistry.ITEMS_PNG;
     }
 	
 	

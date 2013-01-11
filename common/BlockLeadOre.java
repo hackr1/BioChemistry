@@ -1,4 +1,4 @@
-package Chemistry.common;
+package biochemistry.common;
 
 import java.util.Random;
 
@@ -17,7 +17,7 @@ public class BlockLeadOre extends Block {
 	
 	public String getTextureFile()
     {
-            return CommonProxyChemistry.ORES_PNG;
+            return CommonProxyBiochemistry.ORES_PNG;
     }
 
 }
