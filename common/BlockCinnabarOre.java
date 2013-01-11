@@ -1,27 +1,25 @@
 package biochemistry.common;
 
 import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemStack;
 
-public class BlockSaltOre extends Block {
-
-	public BlockSaltOre(int id, int texture)
+public class BlockCinnabarOre extends Block {
+	public BlockCinnabarOre(int id, int texture)
 	{
 		super(id, texture, Material.rock);
 		this.setCreativeTab(CreativeTabs.tabBlock);
-		this.setHardness(3.0f);
+		this.setHardness(2.5f);
 	}
 	
 	public String getTextureFile()
     {
             return CommonProxyBiochemistry.ORES_PNG;
     }
-	
 	public int idDropped(int par1, Random random, int zero) {
-        return ModBiochemistry.salt.shiftedIndex;
+        return ModBiochemistry.cinnabar.shiftedIndex;
 	}
 
 }
