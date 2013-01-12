@@ -18,4 +18,5 @@ If you want to install BioChemistry, please visit: http://hackr1.bplaced.net/min
 If you are a mod developer and want to use our code as a base for your own mod, feel free to fork or download our repository.
 Attention: No texture files are contained in the repository!
 
+TEST
 
