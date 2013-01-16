@@ -104,6 +104,9 @@ public class ModBiochemistry
 		OreDictionary.registerOre("ingotLead", new ItemStack(lead));
 		OreDictionary.registerOre("crystalCinnabar", new ItemStack(cinnabar));
 		
+		//registering extensions to the world generator (mainly ore generation)
+		GameRegistry.registerWorldGenerator(new WorldGeneratorExtensions());
+		
 		//save config
 		config.save();
 	}
