@@ -105,7 +105,7 @@ public class ModBiochemistry
 		OreDictionary.registerOre("crystalCinnabar", new ItemStack(cinnabar));
 		
 		//registering extensions to the world generator (mainly ore generation)
-		GameRegistry.registerWorldGenerator(new WorldGeneratorExtensions());
+		GameRegistry.registerWorldGenerator(new OreGenerator());
 		
 		//save config
 		config.save();
