@@ -53,6 +53,14 @@ public class OreGenerator implements IWorldGenerator {
 			(new WorldGenMinable(ModBiochemistry.saltOre.blockID, 8)).generate(world, random, Xcoord, Ycoord, Zcoord);
 		}
 		
+		//generate 1 vein of Carobiite ore per chunk (in layers 1-20)
+		for (int i = 0; i < 3; i++) {
+			int Xcoord = blockX + random.nextInt(16);
+			int Ycoord = random.nextInt(64);
+			int Zcoord = blockZ + random.nextInt(16);
+			(new WorldGenMinable(ModBiochemistry.carobiiteOre.blockID, 3)).generate(world, random, Xcoord, Ycoord, Zcoord);
+		}
+		
 	}
 
 	private void generateNether(World world, Random random, int blockX, int blockZ) 

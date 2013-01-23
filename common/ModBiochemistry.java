@@ -27,12 +27,14 @@ public class ModBiochemistry
 	public static Block platinumOre;
 	public static Block leadOre;
 	public static Block cinnabarOre;
+	public static Block carobiiteOre;
 	
 	//item definitions
 	public static Item salt;
 	public static Item platinum;
 	public static Item lead;
 	public static Item cinnabar;
+	public static Item potassiumfluoride;
 	
 	//the config
 	public static Configuration config;
@@ -64,32 +66,38 @@ public class ModBiochemistry
 		platinumOre = new BlockPlatinumOre(config.get(Configuration.CATEGORY_BLOCK, "id_PlatinumOre", 251).getInt(), 1).setBlockName("Platinum Ore");
 		leadOre = new BlockLeadOre(config.get(Configuration.CATEGORY_BLOCK, "id_LeadOre", 252).getInt(), 2).setBlockName("Lead Ore");
 		cinnabarOre = new BlockCinnabarOre(config.get(Configuration.CATEGORY_BLOCK, "id_CinnabarOre", 253).getInt(), 3).setBlockName("Cinnabar Ore");
+		carobiiteOre = new BlockCarobiiteOre(config.get(Configuration.CATEGORY_BLOCK, "id_CarobiiteOre", 254).getInt(), 0).setBlockName("Carobiite Ore");
 		
 		//item definitions again...
 		 salt = new ItemSalt(config.get(Configuration.CATEGORY_ITEM, "id_Salt", 5000).getInt());
 		 platinum = new ItemPlatinum(config.get(Configuration.CATEGORY_ITEM, "id_ingotPlatinum", 5001).getInt());
 		 lead = new ItemLead(config.get(Configuration.CATEGORY_ITEM, "id_ingotLead", 5002).getInt());
 		 cinnabar = new ItemCinnabar(config.get(Configuration.CATEGORY_ITEM, "id_crystalCinnabar", 5003).getInt());
+		 potassiumfluoride = new ItemPotassiumfluoride(config.get(Configuration.CATEGORY_ITEM, "id_potassiumfluoride", 5004).getInt());
 		
 		//registering blocks and items
 		GameRegistry.registerBlock(saltOre);
 		GameRegistry.registerBlock(platinumOre);
 		GameRegistry.registerBlock(leadOre);
 		GameRegistry.registerBlock(cinnabarOre);
+		GameRegistry.registerBlock(carobiiteOre);
 		GameRegistry.registerItem(salt, "Salt");
 		GameRegistry.registerItem(platinum, "Platinum");
 		GameRegistry.registerItem(lead, "Lead");
 		GameRegistry.registerItem(cinnabar, "Cinnabar Crystal");
+		GameRegistry.registerItem(potassiumfluoride, "Potassium Fluoride");
 		
 		//registering names
 		LanguageRegistry.addName(saltOre, "Salt Ore");
 		LanguageRegistry.addName(platinumOre, "Platinum Ore");
 		LanguageRegistry.addName(leadOre, "Lead Ore");
 		LanguageRegistry.addName(cinnabarOre, "Cinnabar Ore");
+		LanguageRegistry.addName(carobiiteOre, "Carobiite Ore");
 		LanguageRegistry.addName(salt, "Salt (NaCl)");
 		LanguageRegistry.addName(platinum, "Platinum Ingot (Pt)");
 		LanguageRegistry.addName(lead, "Lead Ingot (Pb)");
 		LanguageRegistry.addName(cinnabar, "Cinnabar Crystal (HgS)");
+		LanguageRegistry.addName(potassiumfluoride, "Potassium Fluoride (KF)");
 		
 		//adding smelting recipes
 		GameRegistry.addSmelting(platinumOre.blockID, new ItemStack(platinum), 1.0f);
@@ -100,6 +108,7 @@ public class ModBiochemistry
 		OreDictionary.registerOre("orePlatinum", new ItemStack(platinumOre));
 		OreDictionary.registerOre("oreLead", new ItemStack(leadOre));
 		OreDictionary.registerOre("oreCinnabar", new ItemStack(cinnabarOre));
+		OreDictionary.registerOre("oreCarobiite", new ItemStack(carobiiteOre));
 		OreDictionary.registerOre("ingotPlatinum", new ItemStack(platinum));
 		OreDictionary.registerOre("ingotLead", new ItemStack(lead));
 		OreDictionary.registerOre("crystalCinnabar", new ItemStack(cinnabar));
